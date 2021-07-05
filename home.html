@@ -6,14 +6,14 @@
 <script>
 		
 			setTimeout(function(){
-  				 window.location.reload(1);
-			}, 1000);
-
-			 var xmlHttp = new XMLHttpRequest();
+				 var xmlHttp = new XMLHttpRequest();
 			xmlHttp.open( "GET"," https://decapi.me/twitch/viewercount/a77m", false ); // false for synchronous request
 			xmlHttp.send( null );
 			var views= xmlHttp.responseText;
 			    viewercount.innerHTML = views;
+			}, 1000);
+
+			
 			  
 
 	</script>
