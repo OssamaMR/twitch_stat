@@ -5,13 +5,11 @@
 	</body>
 <script>
 		
-			setTimeout(function(){
 				 var xmlHttp = new XMLHttpRequest();
 			xmlHttp.open( "GET"," https://decapi.me/twitch/viewercount/a77m", false ); // false for synchronous request
 			xmlHttp.send( null );
 			var views= xmlHttp.responseText;
 			    viewercount.innerHTML = views;
-			}, 1000);
 
 			
 			  
