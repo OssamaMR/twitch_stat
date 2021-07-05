@@ -6,8 +6,7 @@
 <script>
 		
 				 var xmlHttp = new XMLHttpRequest();
-			xmlHttp.open( "GET"," https://decapi.me/twitch/viewercount/a77m", false ); // false for synchronous request
-			xmlHttp.send( null );
+			xmlHttp.open( "GET"," https://decapi.me/twitch/viewercount/a77m", true ); // false for synchronous request
 			var views= xmlHttp.responseText;
 			    viewercount.innerHTML = views;
 
